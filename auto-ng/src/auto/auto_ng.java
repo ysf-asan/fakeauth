@@ -86,7 +86,7 @@ public class auto1 extends JFrame {
 	
 	private void runPythonScript(String target_mac, String own_mac){
 		try{
-			ProcessBuilder pb = new ProcessBuilder("C:\\Users\\Yusuf\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe", "Wmain.py", target_mac, own_mac);
+			ProcessBuilder pb = new ProcessBuilder("/usr/bin/python3.9", "Wmain.py", target_mac, own_mac);
 			pb.redirectErrorStream(true);
 			Process p = pb.start();
 			
